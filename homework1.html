@@ -1,0 +1,96 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<link rel="icon" href="img/snowflake.png" />
+	<style>
+		#box{
+			padding-left: 13px;
+		}
+		#file{
+			color: red;
+			font-size: 20px;
+		}
+		#form{
+			border: 1px solid black;
+			width: 300px;
+			height: 650px;
+		}
+		#name>input{
+			width: 260px;
+		}
+		#num>input{
+			width: 260px;
+		}
+		#phone>input{
+			width: 260px;
+		}
+		#email>input{
+			width: 260px;
+		}
+		#school>input{
+			width: 260px;
+		}
+		#score>input{
+			width: 260px;
+		}
+		#time>input{
+			width: 260px;
+		}
+		#btn{
+			padding-left: 11px;
+		}
+	</style>
+</head>
+<body>
+	<header>
+		<h1>学生信息</h1>
+		<nav id="file">学生档案</nav>
+    </header>
+	<form action="" method="get" id="form">
+		<div id="box">
+			<div id="name">
+				<p>姓名:</p>
+				<input  type="text" name="name" required placeholder="请输入姓名" />*
+			</div>
+			<div id="num">
+				<p>学号:</p>
+				<input  type="text" name="num" required placeholder="请输入学号"/>*
+			</div>
+			<div id="phone">
+				<p>手机号码:</p>
+				<input type="tel" name="p" required placeholder="请输入手机号"/>* 
+			</div>
+			<div id="email">
+				<p>邮箱地址:</p>
+				<input type="email" name="email" required placeholder="请输入邮箱" />*
+			</div>
+			<div id="school">
+				<p>录取学校:</p>
+				<input  type="search" name="school" list="schools" />
+				<datalist id="schools">
+					<option>河北师范大学</option>
+					<option>河北大学</option>
+					<option>河北工业大学</option>
+					<option>河北医科大学</option>
+				</datalist>
+			</div>
+			<div id="score">
+				<p>入学成绩:</p>
+				<input  type="text" name="score" /> 
+			</div>
+			<div id="time">
+				<p>入学时间：</p>
+				<input type="date" name="date1"/>
+			</div>
+		</div>
+		<br/><br/>
+		<div id="btn">
+		    <button type='button' style="width: 269px;height: 25px;background-color: rgba(224, 224, 224, 0.74);border: rgba(224, 224, 224, 0.74);">提交</button>
+		</div>
+	</form>
+	<script>
+
+	</script>
+</body>
+</html>
