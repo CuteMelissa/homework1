@@ -11,11 +11,6 @@
 			color: red;
 			font-size: 20px;
 		}
-		#form{
-			border: 1px solid black;
-			width: 300px;
-			height: 650px;
-		}
 		#name>input{
 			width: 260px;
 		}
@@ -45,9 +40,10 @@
 <body>
 	<header>
 		<h1>学生信息</h1>
-		<nav id="file">学生档案</nav>
     </header>
 	<form action="" method="get" id="form">
+		<fieldset style="width: 300px;">
+			<legend style="color: red;font-size: 25px;">学生档案</legend>
 		<div id="box">
 			<div id="name">
 				<p>姓名:</p>
@@ -88,6 +84,7 @@
 		<div id="btn">
 		    <button type='button' style="width: 269px;height: 25px;background-color: rgba(224, 224, 224, 0.74);border: rgba(224, 224, 224, 0.74);">提交</button>
 		</div>
+		</fieldset>
 	</form>
 	<script>
 
